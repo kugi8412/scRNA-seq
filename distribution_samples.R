@@ -112,7 +112,7 @@ server_samples <- function(input, output, session) {
     if (nrow(current_data) > 0) {
       hist(current_data$Value, probability = TRUE,
            main = "Histogram with Density",
-           xlab = "Values", col = "lightblue")
+           xlab = "Values", ylab = "Density", col = "lightblue")
       lines(density(current_data$Value), col = "red", lwd = 2)
     }
   })
